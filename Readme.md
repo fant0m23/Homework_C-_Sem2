@@ -35,6 +35,8 @@
 [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example15/Program.cs)
 
 ## Задача 21:
+_// Дополнительная, из комментария к семинару_
+
 Напишите программу, которая проверяет пятизначное число на палиндром.
 
 [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example21/Program.cs)
