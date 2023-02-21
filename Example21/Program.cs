@@ -1,29 +1,11 @@
-﻿// Напишите программу, которая проверяет пятизначное число на палиндром.
+﻿// Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит 
+// расстояние между ними в 3D пространстве.
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
 
-void fillArray5digits(int[] array, int num)
-{
-   int index = 4;
-   while (index >= 0)
-   {
-      array[index] = num % 10;
-      num = num / 10;
-      index -= 1;
-   }
-}
 
-Console.WriteLine("Введите пятизначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-// int number = new Random().Next(10000, 100000);
-// Console.WriteLine(number);
-int[] mass = new int[5];
-fillArray5digits(mass, number);
 
-if (mass[0]==mass[4] && mass[1]==mass[3])
-{
-   Console.WriteLine("Это палиндром");
-}
-else
-{
-   Console.WriteLine("Это HE палиндром");
-}
 
+
+
+Console.WriteLine("Это HE палиндром");
