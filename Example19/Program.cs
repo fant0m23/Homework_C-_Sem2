@@ -19,7 +19,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 int[] mass = new int[5];
 fillArray5digits(mass, number);
 
-if (mass[0]==mass[4] && mass[1]==mass[3])
+if (mass[0] == mass[4] && mass[1] == mass[3])
 {
    Console.WriteLine("Да");
 }
