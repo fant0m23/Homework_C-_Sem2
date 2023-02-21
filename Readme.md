@@ -9,7 +9,8 @@
 
 918 -> 1
 
-[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example_10/Program.cs)
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example10/Program.cs)
+  
 
 ## Задача 13:
 Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
@@ -20,7 +21,7 @@
 
 32679 -> 6
 
-[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example_13/Program.cs)
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example13/Program.cs)
 
 ## Задача 15:
 Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -31,9 +32,9 @@
 
 1 -> нет
 
-[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example_15/Program.cs)
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example15/Program.cs)
 
 ## Задача 21:
 Напишите программу, которая проверяет пятизначное число на палиндром.
 
-[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example_21/Program.cs)
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example21/Program.cs)
