@@ -3,37 +3,31 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
+void pointNew(int[] array)
+{
+   Console.Write("Введите имя точки: ");
+   string point = Console.ReadLine()!;
+   int x = new Random().Next(-10, 11);
+   int y = new Random().Next(-10, 11);
+   int z = new Random().Next(-10, 11);
+   array[0] = x;
+   array[1] = y;
+   array[2] = z;
+   Console.Write($"{point.ToUpper()} ({x},{y},{z})");
+   Console.WriteLine();
+}
+double distance(int offsetX, int offsetY, int offsetZ)
+{
+   return Math.Round(Math.Sqrt(Math.Pow(offsetZ, 2) + Math.Pow(offsetY, 2) + Math.Pow(offsetX, 2)),2);
+}
 
-int a1 = new Random().Next(-10, 11);
-int b1 = new Random().Next(-10, 11);
-int c1 = new Random().Next(-10, 11);
-int a2 = new Random().Next(-10, 11);
-int b2 = new Random().Next(-10, 11);
-int c2 = new Random().Next(-10, 11);
-Console.Write($"A ({a1},{b1},{c1})");
-Console.WriteLine();
-Console.Write($"B ({a2},{b2},{c2})");
-Console.WriteLine();
+int[] point1 = new int[3];
+int[] point2 = new int[3];
+pointNew(point1);
+pointNew(point2);
 
-a1 = a1 - a2;
-a2 = 0;
-b1 = b1 - b2;
-b2 = 0;
-
-Console.Write($"A ({a1},{b1},{c1})");
-Console.WriteLine();
-Console.Write($"B ({a2},{b2},{c2})");
-Console.WriteLine();
-
-
-double hypotenuse1 = Math.Round(Math.Sqrt(Math.Pow((c1-c2), 2) + Math.Pow(b1, 2)),2);
-Console.WriteLine(hypotenuse1);
-double hypotenuse2 = Math.Round(Math.Sqrt(Math.Pow(hypotenuse1, 2) + Math.Pow(a1, 2)),2);
-Console.WriteLine(hypotenuse2);
-
-
-
-
-// int dev = Math.Abs(a1 - a2);
-// Console.WriteLine(dev);
-// int offsetX1(int x1, int x2)
+int difX = point1[0] - point2[0];
+int difY = point1[1] - point2[1];
+int difZ = point1[2] - point2[2];
+double length = distance(difX, difY, difZ);
+Console.WriteLine("Расстояние между точками в пространстве равно " + length);
