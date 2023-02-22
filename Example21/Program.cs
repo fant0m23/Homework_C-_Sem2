@@ -5,16 +5,22 @@
 
 void pointNew(int[] array)
 {
-   Console.Write("Введите имя точки: ");
+   Console.WriteLine("Введите имя точки: ");
    string point = Console.ReadLine()!;
-   int x = new Random().Next(-10, 11);
-   int y = new Random().Next(-10, 11);
-   int z = new Random().Next(-10, 11);
+   Console.Clear();
+   Console.Write(point.ToUpper() + " (");
+   int x = Convert.ToInt32(Console.ReadLine());
+   Console.Clear();
+   Console.Write($"{point.ToUpper()} ({x},");
+   int y = Convert.ToInt32(Console.ReadLine());
+   Console.Clear();
+   Console.Write($"{point.ToUpper()} ({x},{y},");
+   int z = Convert.ToInt32(Console.ReadLine());
+   Console.Clear();
+   Console.WriteLine($"{point.ToUpper()} ({x},{y},{z})");
    array[0] = x;
    array[1] = y;
    array[2] = z;
-   Console.Write($"{point.ToUpper()} ({x},{y},{z})");
-   Console.WriteLine();
 }
 double distance(int offsetX, int offsetY, int offsetZ)
 {
