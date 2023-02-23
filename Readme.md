@@ -45,3 +45,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 5 -> 1, 8, 27, 64, 125
 
 [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example23/Program.cs)
+
+## Дополнительное решение задач:
+1. Реализовать перемешивание массива. [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/MixArray/Program.cs)
+2. Частотный словарь (сколько раз встречается в массиве какой-то элемент).  [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/FrequencyDictionary/Program.cs)

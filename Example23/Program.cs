@@ -13,17 +13,17 @@ void fillArrayQrt3(double[] array, int size)
       index++;
    }
 }
-// void printTable(double[] array)
-// {
-//    int size = array.Length,
-//       index = 0;
-//    while (index < size)
-//    {
-//       Console.WriteLine($"{(index + 1)} x {(index + 1)} x {(index + 1)} = {array[index]}");
-//       index++;
-//    }
-//    Console.WriteLine();
-// }
+void printTable(double[] array)
+{
+   int size = array.Length,
+      index = 0;
+   while (index < size)
+   {
+      Console.WriteLine($"{(index + 1)} x {(index + 1)} x {(index + 1)} = {array[index]}");
+      index++;
+   }
+   Console.WriteLine();
+}
 void printArray(double[] array)
 {
    int size = array.Length,
@@ -42,4 +42,4 @@ int nums = Convert.ToInt32(Console.ReadLine());
 double[] mass = new double[nums];
 fillArrayQrt3(mass, nums);
 printArray(mass);
-// printTable(mass);
+printTable(mass);
