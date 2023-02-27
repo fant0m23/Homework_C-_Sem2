@@ -46,6 +46,29 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example23/Program.cs)
 
+## Задача 25:
+Напишите метод, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.Нельзя использовать Math.Pow().
+
+3, 5 -> 243; 
+2, 10 -> 1024
+
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example25/Program.cs)
+
+## Задача 27:
+Напишите метод, который принимает на вход число и выдаёт сумму цифр в числе.
+
+452 -> 11; 82 -> 10; 9012 -> 12
+
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example27/Program.cs)
+
+## Задача 29: 
+Напишите метод, который задаёт массив из N элементов и выводит их на экран.
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19];
+
+6, 1, 33 -> [6, 1, 33]
+
+[Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/Example29/Program.cs)
+
 ## Дополнительное решение задач:
 1. Реализовать перемешивание массива. [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/MixArray/Program.cs)
 2. Частотный словарь (сколько раз встречается в массиве какой-то элемент).  [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/FrequencyDictionary/Program.cs)
