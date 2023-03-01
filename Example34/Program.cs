@@ -3,11 +3,13 @@
 // [345, 897, 568, 234] -> 2
 
 
-int GetValueUser(string message)
+int GetValidValueFromUser(string message)
 {
    Console.Write(message);
-   int value = Convert.ToInt32(Console.ReadLine());
-   return value;
+   string value = Console.ReadLine()!;
+   bool valid = int.TryParse(value, out int f);
+   if (valid == true) return Convert.ToInt32(value);
+   else return GetValidValueFromUser(message);
 }
 int[] NewRandomArray(int size, int from, int to)
 {
@@ -39,7 +41,7 @@ int CountEven(int[] array)
    return count;
 }
 
-int length = GetValueUser("Введите количество элементов массива: ");
+int length = GetValidValueFromUser("Введите количество элементов массива: ");
 int[] mass = NewRandomArray(length, 100, 1000);
 
 PrintArrayPretty(mass);

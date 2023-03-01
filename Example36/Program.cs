@@ -4,11 +4,13 @@
 // [-4, -6, 89, 6] -> 0
 
 
-int GetValueUser(string message)
+int GetValidValueFromUser(string message)
 {
    Console.Write(message);
-   int value = Convert.ToInt32(Console.ReadLine());
-   return value;
+   string value = Console.ReadLine()!;
+   bool valid = int.TryParse(value, out int f);
+   if (valid == true) return Convert.ToInt32(value);
+   else return GetValidValueFromUser(message);
 }
 int[] NewArray(int size, int from, int to)
 {
@@ -39,10 +41,20 @@ int SumOddIndex(int[] array)
    }
    return summa;
 }
+void CorrectionRange(ref int beginRange, ref int endRange)
+{
+   if (beginRange > endRange)
+   {
+      int temp = beginRange + 1;
+      beginRange = endRange - 1;
+      endRange = temp;
+   }
+}
 
-int length = GetValueUser("Введите количество элементов массива: ");
-int beginRange = GetValueUser("Заполнить массив элементами из диапазона от ");
-int endRange = GetValueUser("до ") + 1;
+int length = GetValidValueFromUser("Введите количество элементов массива: ");
+int beginRange = GetValidValueFromUser("Заполнить массив элементами из диапазона от ");
+int endRange = GetValidValueFromUser("до ") + 1;
+CorrectionRange(ref beginRange, ref endRange);
 
 int[] mass = NewArray(length, beginRange, endRange);
 PrintArrayPretty(mass);

@@ -2,11 +2,13 @@
 // [3 7 22 2 78] -> 76
 
 
-int GetIntValueUser(string message)
+int GetValidValueFromUser(string message)
 {
    Console.Write(message);
-   int value = Convert.ToInt32(Console.ReadLine());
-   return value;
+   string value = Console.ReadLine()!;
+   bool valid = int.TryParse(value, out int f);
+   if (valid == true) return Convert.ToInt32(value);
+   else return GetValidValueFromUser(message);
 }
 double[] NewArrayUser(int size, int from, int to)
 {
@@ -64,10 +66,20 @@ double SearchMIN(double[] array)
    }
    return currentMin;
 }
+void CorrectionRange(ref int beginRange, ref int endRange)
+{
+   if (beginRange > endRange)
+   {
+      int temp = beginRange + 1;
+      beginRange = endRange - 1;
+      endRange = temp;
+   }
+}
 
-int length = GetIntValueUser("Введите количество элементов массива: ");
-int beginRange = GetIntValueUser("Заполнить массив элементами из диапазона от ");
-int endRange = GetIntValueUser("до ");
+int length = GetValidValueFromUser("Введите количество элементов массива: ");
+int beginRange = GetValidValueFromUser("Заполнить массив элементами из диапазона от ");
+int endRange = GetValidValueFromUser("до ") + 1;
+CorrectionRange(ref beginRange, ref endRange);
 
 double[] mass = NewArrayUser(length, beginRange, endRange);
 // double[] mass = NewArrayRandom(length);
