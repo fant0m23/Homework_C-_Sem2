@@ -82,7 +82,7 @@ int endRange = GetValidValueFromUser("до ") + 1;
 CorrectionRange(ref beginRange, ref endRange);
 
 double[] mass = NewArrayUser(length, beginRange, endRange);
-// double[] mass = NewArrayRandom(length);
+double[] massRandom = NewArrayRandom(length);
 PrintArrayPretty(mass);
 
 double max = SearchMAX(mass);
