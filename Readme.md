@@ -131,3 +131,5 @@ b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 1. Реализовать перемешивание массива. [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/MixArray/Program.cs)
 2. Частотный словарь (сколько раз встречается в массиве какой-то элемент).  [Решение](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/FrequencyDictionary/Program.cs)
+3. Печать в файл *.txt или *.csv. [Пример](https://github.com/fant0m23/Homework_C-_Sem2/blob/main/PrintToFile/Program.cs) от Сергея К. с семинара 5.
+
